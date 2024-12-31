@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <div id="container">
+ 
+        <!--Navigation bar-->
+           <nav id="nav-bar">
+            <div id="show-location">Delhi</div>
+            <div id="location-search-container">
+                <a href="#location-search-box"><img  id="search-image" src="images/search.png" alt=""></a>
+                <input type="search" placeholder="Search Location" id="location-search-box">
+            </div>
+           </nav>
+
+           <!--Main content-->
+           <div id="main-content">
+            <div class="main-content-text">
+                <p id="current-weather">Current Weather</p>
+                <p id="current-time">08:36</p>
+            </div>
+
+            <div class="sub-main-content">
+                <img id="cloud-image" src="images/cloud.png" alt="">
+                <img src="images/wind.png" alt="" id="wind-image">
+                <div id="current-temp">12°C</div>
+            </div>
+           </div>
+
+           <!--Key events-->
+           <div id="key-events">
+            <div class="current-properties"><img class="properties-image" src="images/wind.png" alt=""> <p class="properties-text">Wind</p> <p id="wind-reading" class="properties-reading">1mph</p></div>
+            <div class="current-properties"> <img class="properties-image" src="images/cloud.png" alt=""><p class="properties-text">Cloud</p> <p class="properties-reading" id="cloud-reading">15%</p></div>
+            <div class="current-properties"><img  class="properties-image" src="images/humidity.png" alt=""> <p class="properties-text">Humidity</p> <p class="properties-reading" id="humidity-reading">54%</p></div>
+            <div class="current-properties"><p class="properties-text">Pressure</p> <p id="pressure-reading" class="properties-reading" >27.65 in</p></div>
+          
+           </div>
+
+      </div>
+
+
+
+    <script src="index2.js"></script>
+</body>
+</html>
